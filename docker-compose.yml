@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  dunfell:
+    build:
+      context: .
+      dockerfile: dunfell.dockerfile
+    volumes:
+      - /run/media/sirus/aux/code/:/shared
+    stdin_open: true
+    tty: true
